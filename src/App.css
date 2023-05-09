@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700;900&display=swap');
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 1440px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+html {
+  font-family: 'Montserrat', sans-serif;
+}
+
+li,
+a {
+  text-decoration: none;
+  list-style: none;
+  color: #444444;
+}
+
+.heading {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #fc5a00;
+}
+
+h2 {
+  font-size: 1.2rem;
+  color: #000;
+  font-weight: 400;
+}
+p {
+  font-size: 14px;
+}
+
+h4 {
+  text-align: center;
+  color: #fc5a00;
+  margin: 1rem;
+}
+/* Navbar */
+nav {
+  background-color: #fff;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.navlinks {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.signUp {
+  color: #fc5a00;
+  border: 1px solid #fc5a00;
+  padding: 0.6rem 1rem;
+}
+
+.login {
+  color: #f4f4f4;
+  background-color: #fc5a00;
+  border: 1px solid #fc5a00;
+
+  padding: 0.6rem 1.5rem;
+}
+/* End of Navbar */
+
+.container {
+  max-width: 1440px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Hero */
+.hero-bg {
+  height: 300px;
+  background-image: url('../images/hero-bg.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  align-items: center;
+  gap: 2rem;
+  justify-content: space-between;
+  margin-bottom: 6rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: #fc5a00;
+  font-weight: 700;
+}
+
+.hero figure {
+  margin-top: -4rem;
+}
+
+.icon {
+  color: #fc5a00;
+  width: 30px;
+  height: 30px;
+  background-color: #d9d9d9;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.contact div p {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+  gap: 1rem;
+}
+
+.btns {
+  align-self: center;
+}
+
+.btns button {
+  display: inline-block;
+  padding: 0.8rem 1rem;
+  border: none;
+  margin-top: 70%;
+  margin-left: 1.5rem;
+  border-radius: 25px;
+}
+
+.btns button:nth-child(1) {
+  color: #fff;
+  background-color: #fc5a00;
+}
+
+.underline {
+  height: 1px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.headings {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 70%;
+  font-weight: 600;
+}
+
+.headings button {
+  font-size: 1.2rem;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.headings .active {
+  color: #fc5a00;
+  border-bottom: 2px solid;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+  align-items: center;
+}
+
+.available-products {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.search-input-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #f6f6f6;
+  border-radius: 25px;
+}
+
+.search-input-container input {
+  border: none;
+  background-color: #f6f6f6;
+}
+
+.product {
+  background-color: #f6f6f6;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.product div {
+  padding: 1rem 0.5rem;
+}
+
+.product div p {
+  margin: 0.5rem 0;
+}
+
+.product div p:nth-child(2) {
+  color: #fc5a00;
+}
+
+.product div p:nth-child(3) {
+  text-align: right;
+  font-weight: 600;
+}
+
+.review {
+  display: grid;
+  grid-template-columns: 1.2fr 1.5fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.review-user {
+  display: flex;
+  gap: 1rem;
+}
+.review-user h3,
+p {
+  font-size: 14px;
+}
+
+.review-user h3,
+p {
+  margin-bottom: 1rem;
+}
+
+.elipse {
+  justify-self: end;
+  align-self: start;
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.stars p {
+  margin-bottom: 0;
+}
+
+.review-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #d9d9d9;
+}
+
+.review-stats h2 {
+  margin: 2rem 0;
+}
+
+.average-rating {
+  border-left: 2px solid #d9d9d9;
+  border-right: 2px solid #d9d9d9;
+  padding-left: 4rem;
+}
+
+.average-rating h3 {
+  font-size: 1rem;
+}
+
+.average-rating h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.total-review h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.total-review h2 span {
+  font-size: 12px;
+  display: inline-block;
+  padding: 5px;
+  background-color: rgba(252, 90, 0, 0.08);
+  margin: 0 5px;
+  color: #fc5a00;
+  border-radius: 5px;
+}
+
+.star-ratings {
+  padding: 0 4rem;
+}
+
+.star-ratings div div {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.star-ratings div {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.rating-star {
+  width: 30%;
+}
+.star-ratings div h4 {
+  margin: 0;
+}
+.star-1 {
+  width: 20%;
+  height: 5px;
+  background-color: #ffdbb5;
+  border: 25px;
+}
+.star-2 {
+  width: 40%;
+  height: 5px;
+  background-color: #75c3d4;
+  border: 25px;
+}
+.star-3 {
+  width: 60%;
+  height: 5px;
+  background-color: #db91f2;
+  border: 25px;
+}
+.star-4 {
+  width: 80%;
+  height: 5px;
+  background-color: #0aa45b;
+  border: 25px;
+}
+.star-5 {
+  width: 100%;
+  height: 5px;
+  background-color: #fc5a00;
+  border: 25px;
+}
+
+.sales {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+  margin: 4rem auto;
+}
+
+.chart {
+  display: flex;
+  margin-bottom: -2.2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chart span {
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  font-size: 12px;
+}
+.chartea {
+  margin-right: -1rem;
+}
+
+.analysis {
+  overflow: hidden;
+  border: 1.5px solid #d9d9d9;
+  border-radius: 25px;
+}
+
+.analysis h2 {
+  color: rgba(68, 68, 68, 1);
+  font-size: 1.5rem;
+  margin: 2rem 0;
+  font-weight: 600;
+}
+
+.analysis h5 {
+  color: rgba(68, 68, 68, 1);
+  font-weight: 600;
+}
+
+.sales-padding {
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+
+.sale-padding h5 {
+  font-size: 1rem;
+}
+
+/* End of Hero */
